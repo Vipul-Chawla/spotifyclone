@@ -2,7 +2,7 @@ console.log("Welcome to spotify");
 
 //Initialize variables
 let songIndex = 0;
-let audioElement = new Audio("/songs/1.mp3");
+let audioElement = new Audio("./songs/1.mp3");
 let masterPlay = document.getElementById('masterplay');
 let progressBar = document.getElementById('progressbar');
 let forward = document.getElementById('forward');
@@ -13,16 +13,16 @@ let currentSong = document.getElementById("currentSong");
 
 //Songs initialize
 let songs = [
-    {songName: "Ab tumhare hwale", songPath: "/songs/2.mp3", coverPath: "/covers/2.jpg"},
-    {songName: "Ro rha hu me- Aashiqui2", songPath: "/songs/3.mp3", coverPath: "/covers/3.jpg"},
-    {songName: "Raabta- Rabta", songPath: "/songs/4.mp3", coverPath: "/covers/4.jpg"},
-    {songName: "Kamli - Dhoom3", songPath: "/songs/5.mp3", coverPath: "/covers/5.jpg"},
-    {songName: "Salam-e-ishq", songPath: "/songs/6.mp3", coverPath: "/covers/6.jpg"},
-    {songName: "Besharam rang- Pathan", songPath: "/songs/7.mp3", coverPath: "/covers/7.jpg"},
-    {songName: "Duniyaa- Luka chuppi", songPath: "/songs/8.mp3", coverPath: "/covers/8.jpg"},
-    {songName: "Maar Daala", songPath: "/songs/9.mp3", coverPath: "/covers/9.jpg"},
-    {songName: "Taal- Taal", songPath: "/songs/10.mp3", coverPath: "/covers/10.jpg"},
-    {songName: "Kesariya- Brahmastra", songPath: "/songs/1.mp3", coverPath: "/covers/1.jpg"}
+    {songName: "Ab tumhare hwale", songPath: "./songs/2.mp3", coverPath: "./covers/2.jpg"},
+    {songName: "Ro rha hu me- Aashiqui2", songPath: "./songs/3.mp3", coverPath: "./covers/3.jpg"},
+    {songName: "Raabta- Rabta", songPath: "./songs/4.mp3", coverPath: "./covers/4.jpg"},
+    {songName: "Kamli - Dhoom3", songPath: "./songs/5.mp3", coverPath: "./covers/5.jpg"},
+    {songName: "Salam-e-ishq", songPath: "./songs/6.mp3", coverPath: "./covers/6.jpg"},
+    {songName: "Besharam rang- Pathan", songPath: "./songs/7.mp3", coverPath: "./covers/7.jpg"},
+    {songName: "Duniyaa- Luka chuppi", songPath: "./songs/8.mp3", coverPath: "./covers/8.jpg"},
+    {songName: "Maar Daala", songPath: "./songs/9.mp3", coverPath: "./covers/9.jpg"},
+    {songName: "Taal- Taal", songPath: "./songs/10.mp3", coverPath: "./covers/10.jpg"},
+    {songName: "Kesariya- Brahmastra", songPath: "./songs/1.mp3", coverPath: "./covers/1.jpg"}
 
 ];
 
