@@ -85,6 +85,7 @@ masterPlay.addEventListener('click', ()=>{
 audioElement.addEventListener('timeupdate', ()=>{
     progress = parseInt((audioElement.currentTime / audioElement.duration)*100);
     progressBar.value = progress;
+    console.log(progress);
 });
 
 progressBar.addEventListener('change', ()=>{
