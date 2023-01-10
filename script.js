@@ -59,6 +59,13 @@ Array.from(document.getElementsByClassName('songitemplay')).forEach((element, i)
             masterPlay.classList.replace('fa-circle-pause', 'fa-circle-play');
             gif.style.opacity = 0;
         }
+        // Handle progress Bar
+        audioElement.addEventListener('timeupdate', ()=>{
+            progress = parseInt((audioElement.currentTime / audioElement.duration)*100);
+            progressBar.value = progress;
+            console.log(progress);
+        });
+
     })
 });
 
@@ -82,12 +89,6 @@ masterPlay.addEventListener('click', ()=>{
 });
 
 // Handle progress Bar
-audioElement.addEventListener('timeupdate', ()=>{
-    progress = parseInt((audioElement.currentTime / audioElement.duration)*100);
-    progressBar.value = progress;
-    console.log(progress);
-});
-
 progressBar.addEventListener('change', ()=>{
     audioElement.currentTime = (progressBar.value / 100) * audioElement.duration;
 })
